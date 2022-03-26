@@ -36,8 +36,10 @@ def lcs(x, y):
     pprint.pprint(str_match)
     for row in range(len(str_match)-1, 0,-1):
         for coll in range(len(str_match[row])-1, -1, -1):
-            print(str_match[row], row, coll, str_match[row][coll])
+            # print(str_match[row], row, coll, str_match[row][coll])
             if str_match[row][coll]>1:
+                while str_match[row][coll]>0:
+
                 result.append(y[coll])
     print(result)
  
